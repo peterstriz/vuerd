@@ -163,7 +163,7 @@ export const createXMLString = (xmlNodes: XMLNode[]): string => {
  * @param root Root html element used to create elements
  * @returns Node converted to XML in string form
  */
-const createNode = (xmlNode: XMLNode, root: Document): HTMLElement => {
+export const createNode = (xmlNode: XMLNode, root: Document): HTMLElement => {
   let element = root.createElement(xmlNode.name);
 
   xmlNode.attributes.forEach(attr => {

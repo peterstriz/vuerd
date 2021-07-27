@@ -38,7 +38,7 @@
     "build:sub": "rollup -c rollup.config.sub.js",
     "build:vscode": "rollup -c rollup.config.vscode.js",
     "build:storybook": "build-storybook",
-    "test": "jest",
+    "test": "jest --verbose",
     "test:watch": "jest --watch",
     "deploy:storybook": "npm run build && storybook-to-ghpages",
     "typedoc": "typedoc --out docs types/index.d.ts"

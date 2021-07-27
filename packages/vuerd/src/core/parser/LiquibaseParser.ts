@@ -1,5 +1,6 @@
 import { getLatestSnapshot } from '@/core/contextmenu/export.menu';
 import { createStoreCopy } from '@/core/file';
+import { Logger } from '@/core/logger';
 import {
   Constraints,
   Dialect,
@@ -29,7 +30,7 @@ export const LiquibaseParser = (
   dialect: Dialect = defaultDialect,
   rootFile?: LiquibaseFile
 ) => {
-  console.log('PARSING...', files);
+  Logger.log('PARSING...', files);
 
   const { store } = context;
   const zoom = store.canvasState.zoomLevel;

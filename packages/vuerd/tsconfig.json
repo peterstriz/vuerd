@@ -12,7 +12,7 @@
         "tags": ["css"]
       }
     ],
-    "types": ["vite/client"]
+    "types": ["jest", "vite/client"]
   },
   "include": ["src/**/*.ts", "types/**/*.ts"],
   "exclude": ["node_modules"]
